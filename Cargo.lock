@@ -278,7 +278,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "queryexcel"
+name = "filequerier"
 version = "0.1.0"
 dependencies = [
  "calamine",
