@@ -12,14 +12,8 @@ use std::path::Path;
 fn main() -> Result<(), AppError> {
     env_logger::init();
     info!("Start");
-    //small excel
-    // let excel_file_path = Path::new("/home/cittaz/Downloads/sample.xlsx");
-
-    //800k rows excel
-    // let excel_file_path = Path::new("/home/cittaz/Downloads/linkedin_job_postings.xlsx");
-
-    //100 rows excel
-    let excel_file_path = Path::new("/home/cittaz/Downloads/linkedin_job_postingsTwo.xlsx");
+    
+    let excel_file_path = Path::new("path-of-the-file");
 
     let excel_file = ExcelFile::new(excel_file_path)?;
     let headers_collection = excel_file.headers;
